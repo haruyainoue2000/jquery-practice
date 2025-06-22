@@ -1,0 +1,49 @@
+@charset "UTF-8";
+
+/* デフォルトスタイル */
+#title {
+  color: black;
+  font-size: 24px;
+}
+
+/* 強調スタイル（classで切り替える） */
+.highlight {
+  color: white;
+  background-color: orange;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+#infoPanel {
+  display: none;
+  background-color: #f0f0f0;
+  padding: 20px;
+  margin-top: 10px;
+  border-radius: 8px;
+  transition: all 0.3s;
+}
+
+/* パネルが開いているときのスタイル */
+#infoPanel.active {
+  display: block;
+  border-left: 5px solid royalblue;
+}
+
+#menu {
+  display: flex;
+  list-style: none;
+  padding: 0;
+}
+
+.menu-item {
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+/* 選択中のスタイル */
+.menu-item.active {
+  background-color: #007BFF;
+  color: white;
+  border-radius: 6px;
+}
