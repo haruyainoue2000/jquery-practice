@@ -1,0 +1,85 @@
+@charset "UTF-8";
+
+#box-1 {
+  width: 200px;
+  height: 100px;
+  background-color: skyblue;
+  text-align: center;
+  line-height: 100px;
+  margin: 20px auto;
+  font-weight: bold;
+}
+
+#box-2 {
+  width: 200px;
+  height: 100px;
+  background-color: lightgreen;
+  text-align: center;
+  line-height: 100px;
+  margin: 20px auto;
+  font-weight: bold;
+  display: none; /* 初期は非表示に */
+}
+
+#box-3 {
+  width: 100px;
+  height: 100px;
+  background-color: coral;
+  position: relative; /* 左右移動のために必要 */
+  margin: 20px auto;
+}
+
+#box-4 {
+  width: 100px;
+  height: 100px;
+  background-color: tomato;
+  position: relative; /* 位置調整するために必要 */
+  margin: 50px auto;
+}
+
+button {
+  margin: 5px;
+  padding: 10px 20px;
+}
+
+#notification {
+  position: fixed;
+  top: -50px; /* 最初は画面外に */
+  left: 0;
+  width: 100%;
+  background-color: #4caf50;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+}
+
+.action-btn {
+  display: inline-block;
+  padding: 12px 24px;
+  margin: 100px auto;
+  background-color: #2196f3;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.action-btn:hover {
+  background-color: #1976d2;
+}
+
+.wrapper {
+  text-align: center;
+  margin-top: 100px;
+}
+
+.controls {
+  text-align: center;
+}
+
+.controls button {
+  padding: 10px 20px;
+  margin: 5px;
+}
